@@ -1,0 +1,10 @@
+@use 'variables' as v; 
+@use 'mixins' as m; 
+
+.btn {
+    @include m.button(v.$white, v.$black);
+}
+
+.btn-black {
+    @include m.button(v.$black, v.$white);
+}
