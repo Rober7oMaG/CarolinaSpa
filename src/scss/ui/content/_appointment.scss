@@ -12,7 +12,11 @@
 
     &__heading {
         @include m.heading;
-        font-size: 6rem
+        font-size: 3.8rem;
+
+        @include m.tablet {
+            font-size: 6rem;
+        }
     }
 
     &__text {
