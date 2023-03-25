@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.welcome {
+    text-align: center;
+
+    &__heading {
+        @include m.cursiveHeading;
+    }
+
+    &__text {
+        font-size: 2.6rem;
+        color: v.$gray;
+        max-width: 50rem;
+        margin: 4rem auto 0 auto;
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.appointment {
+    background-image: url(../img/appointments_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5rem 0;
+    color: v.$white;
+    text-align: center;
+
+    &__heading {
+        @include m.heading;
+        font-size: 6rem
+    }
+
+    &__text {
+        max-width: 60rem;
+        margin: 0 auto;
+        line-height: 2;
+    }
+
+    &__link {
+        @include m.button(v.$primary, v.$white);
+        padding: 2rem 10rem;
+    }
+}

@@ -47,3 +47,27 @@
     gap: $gap;
     grid-template-columns: repeat($columns, 1fr);
 }
+
+@mixin cursiveHeading {
+    text-align: center;
+    color: v.$secondary;
+    text-transform: lowercase;
+    font-family: v.$cursiveFont;
+    line-height: 0.8;
+    font-weight: 400;
+    font-size: 4rem;
+
+    span {
+        color: v.$black;
+        display: block;
+        text-transform: uppercase;
+        font-family: v.$mainFont;
+    }
+}
+
+@mixin heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4rem;
+}
